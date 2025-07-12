@@ -1,8 +1,7 @@
-from typing import List, Annotated
+from typing import Annotated
 from fastapi import APIRouter, HTTPException
 from fastapi.params import Depends
 from dependencies import get_task_crud
-from models import Task
 from .crud import TaskCRUD
 from .schemas import TaskCreate, TaskUpdate
 
